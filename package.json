@@ -4,6 +4,7 @@
   "description": "Simple script to run speedtest.net tests and record data in some meaningful way",
   "main": "./app/main.js",
   "scripts": {
+    "start": "node ./app/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
