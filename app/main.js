@@ -8,6 +8,7 @@ const logPath = './log.log';
 /**
  * TODO
  * ADD COMMANDER TO PARSE CLI ARGUMENTS FOR PATH
+ * NOW IN DEV BRANCH
 **/
 
 var append = function (path, data) {
