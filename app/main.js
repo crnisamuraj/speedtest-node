@@ -3,7 +3,7 @@ const os = require('os');
 var speedtest = require('speedtest-net');
 var test = speedtest({maxTime: 5000});
 
-const logPath = './app/speedLog/log.log';
+const logPath = './log.log';
 
 /**
  * TODO
