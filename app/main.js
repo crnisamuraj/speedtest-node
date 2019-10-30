@@ -5,6 +5,11 @@ var test = speedtest({maxTime: 5000});
 
 const logPath = './app/logs/log.txt';
 
+/**
+ * TODO
+ * ADD COMMANDER TO PARSE CLI ARGUMENTS FOR PATH
+**/
+
 var write = function (path, data) {
 	try {
 		if (fs.existsSync(path)){
