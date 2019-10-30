@@ -1,4 +1,5 @@
 const fs = require('fs');
+const os = require('os');
 var speedtest = require('speedtest-net');
 var test = speedtest({maxTime: 5000});
 
@@ -8,7 +9,7 @@ var write = function (path, data) {
 	try {
 		if (fs.existsSync(path)){
 			//console.dir('exists');
-			fs.appendFile(path, `${JSON.stringify(data)},` , (err) => {
+			fs.appendFile(path, `${os.EOL}${JSON.stringify(data)},` , (err) => {
 				if (err) {
 					return console.dir(err);
 				}
