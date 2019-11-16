@@ -12,7 +12,7 @@ const logPath = './log.log';
 **/
 
 var append = function (path, data) {
-	fs.appendFile(path, `${JSON.stringify(data)},${os.EOL}` , (err) => {
+	fs.appendFile(path, `{"date": {${new Date()}}, "data": ${JSON.stringify(data)}},${os.EOL}` , (err) => {
 		if (err) {
 			return console.dir(err);
 		}
@@ -20,7 +20,7 @@ var append = function (path, data) {
 }
 
 var write = function (path, data) {
-	fs.writeFile(path, `${JSON.stringify(data)},${os.EOL}` , (err) => {
+	fs.writeFile(path, `{"date": {${new Date()}}, "data": ${JSON.stringify(data)}},${os.EOL}` , (err) => {
 		if (err) {
 			return console.dir(err);
 		}
